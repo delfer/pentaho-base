@@ -5,5 +5,5 @@ FROM tomcat:8
 RUN     apt-get update \
         && apt-get install -y xvfb \
         && apt-get clean all \
-        && rm -rf /var/lib/apt/lists/*
+        && rm -rf /var/lib/apt/lists/* \
         && rm -rf webapps
